@@ -23,5 +23,7 @@ df_race_field_renamed.write.mode("overwrite").partitionBy("race_year").parquet("
 temp_read=spark.read.parquet("/FileStore/tables/race/race_year=2005")
 display(temp_read)
 
+##new code added
+
 %fs
 ls /FileStore/tables/race/race_year=2005
